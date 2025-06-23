@@ -140,7 +140,7 @@ class Server(Peer):
         )
 
     def __iter__(self) -> t.Generator[
-        dict[
+        t.Dict[
             str,
             t.Union[
                 bool,

@@ -19,7 +19,7 @@ from .base import BasePeer
 from .utils.sets import NonStrictIPNetworkSet
 
 
-def _run(cmd: list[str], **kwargs) -> subprocess.CompletedProcess:
+def _run(cmd: t.List[str], **kwargs) -> subprocess.CompletedProcess:
     """
     Run a system command with the appropriate settings for how the code wants the output
     """

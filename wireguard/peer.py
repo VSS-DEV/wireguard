@@ -144,7 +144,9 @@ class Peer(BasePeer):  # pylint: disable=too-many-instance-attributes
         self,
         description: str,
         *,
-        peers: t.Union[t.List[BasePeer], PeerSet, t.List[t.Dict[str, t.Any]], None] = None,
+        peers: t.Union[
+            t.List[BasePeer], PeerSet, t.List[t.Dict[str, t.Any]], None
+        ] = None,
         save_config: t.Union[bool, None] = None,
         config_cls: t.Union[Config, None] = None,
         service_cls: t.Union[Interface, None] = None,
@@ -170,7 +172,7 @@ class Peer(BasePeer):  # pylint: disable=too-many-instance-attributes
     def __iter__(
         self,
     ) -> t.Generator[
-        dict[
+        t.Dict[
             str,
             t.Union[
                 bool,

@@ -11,7 +11,7 @@ from subnet import (
 
 def find_ip_and_subnet(
     value: t.Union[str, IPv4Address, IPv6Address, IPv4Network, IPv6Network],
-) -> tuple[
+) -> t.Tuple[
     t.Union[IPv4Address, IPv6Address, None], t.Union[IPv4Network, IPv6Network, None]
 ]:
     """
