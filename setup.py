@@ -9,12 +9,11 @@ def readme():
 
 name = 'wireguard'
 description = 'Wireguard Utilities'
-version = '1.0.1'
+version = '1.0.2'
 author = 'Fictive Kin LLC'
 email = 'hello@fictivekin.com'
 classifiers = [
     'Development Status :: 4 - Beta',
-    'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
